@@ -1,0 +1,139 @@
+/* Reset & Fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #0f0f0f;
+  color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 300px;
+  background-color: #1a1a1a;
+  padding: 30px 20px;
+  border-radius: 12px;
+  position: sticky;
+  top: 20px;
+  height: fit-content;
+}
+
+.profile-pic {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.sidebar h1 {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+.sidebar p {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.contact-info,
+.social-links,
+.skills {
+  margin-top: 20px;
+}
+
+.sidebar a {
+  color: #a0cfff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.sidebar li {
+  margin-bottom: 5px;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 0 30px;
+}
+
+.top-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.resume-btn {
+  background-color: #333;
+  padding: 10px 16px;
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.resume-btn:hover {
+  background-color: #555;
+}
+
+.main-content section {
+  margin-bottom: 40px;
+}
+
+.main-content h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.main-content p,
+.main-content li {
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.projects ul {
+  padding-left: 20px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    position: static;
+    margin-bottom: 30px;
+  }
+
+  .main-content {
+    padding: 0;
+  }
+
+  .top-header {
+    justify-content: center;
+  }
+}
+
